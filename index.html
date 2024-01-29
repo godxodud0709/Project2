@@ -8,6 +8,7 @@
     <style>
         
         h1 {
+			font-size: 5em;
             font-weight: bold;
             font-family:Verdana, Geneva, Tahoma, sans-serif;
             color: black;
@@ -57,7 +58,7 @@
 			text-decoration: none;
 			padding: 20px;
             background-color: cyan;
-            border: 10px solid blue;
+            border: 10px solid skyblue;
 			border-radius: 40px;
 			font-weight: bold;
 			color: black;
@@ -67,7 +68,7 @@
 		}
 
 		.button-3:hover {
-			background-color: blue;
+			background-color: skyblue;
 		}
 
 		.button-4 {
@@ -98,16 +99,59 @@
 			align-items: center;
 			justify-content: center;
 		}
+		
+		body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: skyblue;
+            animation: changecolor 4s infinite;
+        }
 
+
+        @keyframes changecolor {
+            0% {
+                background-color: skyblue;
+            }
+            
+            60% {
+                background-color: greenyellow;
+            }
+            100% {
+                background-color: gold;
+            }
+        }
+
+		.letter {
+			font-size: 5em;
+            font-weight: bold;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            color: skyblue;
+  			animation: changeLetterColor 2s infinite;
+		}
+
+		@keyframes changeLetterColor {
+  			0% {
+    			color: greenyellow;
+  			}
+  			50% {
+    			color: yellow;
+  			}
+  			100% {
+    			color: cyan;
+  			}
+}
     </style>
 </head>
 <body>
 
 	<div class="container">
-		<h1>Letters world</h1>
-		<a class="button-1" href="1.html">1</a>
-		<a class="button-2" href="2.html">2</a>
-		<a class="button-3" href="3.html">3</a>
+		<h1 class="letter">TY's letters world</h1>
+		<a class="button-1" href="project1/1.html">1</a>
+		<a class="button-2" href="project2/2.html">2</a>
+		<a class="button-3" href="project3/3.html">3</a>
 		<a class="button-4">Fake Button</a>
 	</div>
     
